@@ -38,6 +38,7 @@ def main():
 
     zip_name = f"{playlist_title}.zip"
     zip_files(media_files, zip_name, output_directory)
+    clean_up(media_files)
     print(f"Playlist saved as {zip_name}")
 
 
