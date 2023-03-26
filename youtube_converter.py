@@ -30,4 +30,3 @@ def zip_files(files, zip_name, output_directory):
     with zipfile.ZipFile(os.path.join(output_directory, zip_name), 'w') as zipf:
         for file in files:
             zipf.write(file, os.path.basename(file))
-            os.remove(file)
